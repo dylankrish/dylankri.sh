@@ -561,11 +561,6 @@ a {
     animation: fade-in 0.5s ease-in-out forwards;
     animation-delay: 1s; /* Adjust the delay time as per your requirements */
   }
-  
-
-#imd08e {
-    flex-basis: 34%;
-}
 
 @keyframes fade-in {
     from {
