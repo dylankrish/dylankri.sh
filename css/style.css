@@ -555,7 +555,8 @@ a {
     background-position: left top;
     background-attachment: scroll;
     background-size: auto;
-    background-image: linear-gradient(#00ff95 0%, #00ff95 100%);
+    /* Download CV Button */
+    background-image: linear-gradient(#FF5555 0%, #FF5555 100%);
     width: 220px;
     opacity: 0;
     animation: fade-in 0.5s ease-in-out forwards;
