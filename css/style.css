@@ -557,7 +557,7 @@ a {
     background-size: auto;
     /* Download CV Button */
     background-image: linear-gradient(#FF5555 0%, #FF5555 100%);
-    width: 220px;
+    width: 270px;
     opacity: 0;
     animation: fade-in 0.5s ease-in-out forwards;
     animation-delay: 1s; /* Adjust the delay time as per your requirements */
