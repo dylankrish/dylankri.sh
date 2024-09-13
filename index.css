@@ -112,12 +112,12 @@ html, body {
   100% { transform: rotate( 0.0deg) }
 }
 
-.title-text {
+#title-text {
   font-size: 3.8rem;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
-.subtitle-text {
+#subtitle-text {
   font-size: 1.8rem;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
