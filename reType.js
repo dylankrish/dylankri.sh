@@ -4,7 +4,7 @@ const texts = ["Cybersecurity Major", "Software Developer", "Security Enthusiast
 let currentTextIndex = 0;
 let currentCharIndex = 0;
 const typingSpeed = 100;  // typing speed in ms
-const deletingSpeed = 50; // deleting speed in ms
+const deletingSpeed = 25; // deleting speed in ms
 const delayBetweenTexts = 2000; // delay between displaying texts in ms
 
 function typeText() {
