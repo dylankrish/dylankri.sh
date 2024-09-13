@@ -1,6 +1,6 @@
 // script to delete and re-type the secondary text
 
-const texts = ["Cybersecurity Major", "Software Developer", "Security Enthusiast", "Homelab Hobbyist", "Penn State Student"];
+const texts = ["cybersecurity major!", "software developer!", "security enthusiast!", "homelab hobbyist!", "Penn State student!"];
 let currentTextIndex = 0;
 let currentCharIndex = 0;
 const typingSpeed = 100;  // typing speed in ms
