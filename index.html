@@ -22,8 +22,7 @@
 </head>
 <html lang="en">
   <body>
-    <div id="particles-js"></div>
-    <script src="particles.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <div id="intropanel">
       <nav class="navbar">
         <ul>
@@ -32,18 +31,23 @@
           <li><a href="https://www.linkedin.com/in/dylan-krishnan-8bb963251/">LinkedIn</a></li>
         </ul>
       </nav>
-      <div class="animated-background">
-      <strong id="main-text" class="title-text">Hi, I'm Dylan! <span class="wave">👋</span></strong>
-      <div id="secondary-text" class="subtitle-text">I'm a </div>
-      <!-- TODO: add hover effect to buttons -->
-      <div class="button-container">
-        <a href="Dylan Krishnan Cybersecurity Resume.pdf" class="interaction-button"><strong>Open Resume</strong></a>
-        <a href="mailto:dylan@dylankri.sh" class="interaction-button"><strong>Contact Me</strong></a>
-      </div>  
-      <footer class="footer">
-        <p>Copyright © 2024 Dylan Krishnan</p>
-      </footer>
-    </div>
+      <div id="particles-js">
+        <strong id="main-text" class="title-text">Hi, I'm Dylan! <span class="wave">👋</span></strong>
+        <div id="secondary-text" class="subtitle-text">I'm a </div>
+        <div class="button-container">
+          <a href="Dylan Krishnan Cybersecurity Resume.pdf" class="interaction-button"><strong>Open Resume</strong></a>
+          <a href="mailto:dylan@dylankri.sh" class="interaction-button"><strong>Contact Me</strong></a>
+        </div>
+        <footer class="footer">
+          <p>Copyright © 2024 Dylan Krishnan</p>
+        </footer>
+      </div>
   </body>
+  <script>
+    // Load particles.json
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('Particles.js config loaded from particles.json');
+    });
+  </script>
   <script type="text/javascript" src="reType.js"></script>
 </html>
