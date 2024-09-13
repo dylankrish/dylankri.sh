@@ -1,28 +1,32 @@
 <!doctype html>
-<head>
-  <title>Dylan Krishnan</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
-  <link rel="icon" href="favicon.ico">
-  <!-- Matomo -->
-  <script>
-    var _paq = window._paq = window._paq || [];
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      var u="//analytics.dylankri.sh/";
-      _paq.push(['setTrackerUrl', u+'matomo.php']);
-      _paq.push(['setSiteId', '1']);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-    })();
-  </script>
-  <!-- End Matomo Code -->
-</head>
 <html lang="en">
+  <head>
+    <title>Dylan Krishnan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="favicon.ico">
+    <!-- Matomo -->
+    <script>
+      var _paq = window._paq = window._paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//analytics.dylankri.sh/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+  </head>
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <!-- particles js -->
+    <div id="particles-js"></div>
+
+    <!-- intro content panel -->
     <div id="intropanel">
       <nav class="navbar">
         <ul>
@@ -31,7 +35,6 @@
           <li><a href="https://www.linkedin.com/in/dylan-krishnan-8bb963251/">LinkedIn</a></li>
         </ul>
       </nav>
-      <div id="particles-js">
         <strong id="main-text" class="title-text">Hi, I'm Dylan! <span class="wave">👋</span></strong>
         <div id="secondary-text" class="subtitle-text">I'm a </div>
         <div class="button-container">
@@ -43,6 +46,7 @@
         </footer>
       </div>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script>
     // Load particles.json
     particlesJS.load('particles-js', 'particles.json', function() {
