@@ -56,6 +56,7 @@ html, body {
   width: 100%;
   height: 100%;
   background-color: #432c2c; /* Background color */
+  z-index: -1; /* push particles back */
 }
 
 .wave {
