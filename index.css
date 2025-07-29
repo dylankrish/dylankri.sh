@@ -96,6 +96,19 @@ html, body {
   gap: 0.9rem; /* Space between buttons */
   margin-top: 1.5rem; /* Space above buttons */
 }
+
+@media (max-width: 475px) {
+  .button-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .interaction-button {
+    max-width: 100%; /* don't shrink on small screens */
+    min-width: 0;
+  }
+}
+
 .interaction-button {
   background: rgba(255, 255, 255, 0.2); /* transparent */
   border: 1px solid rgba(255, 255, 255, 0.5);
