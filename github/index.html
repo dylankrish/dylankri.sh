@@ -9,7 +9,81 @@
     </script>
 </head>
 <body>
-    <p>Redirecting you to https://github.com/dylankrish</p>
-    <p>If you are not redirected automatically, <a href="https://github.com/dylankrish">click here</a>.</p>
+    <p class="text">Please wait. You are being redirected.</p>
+    <div class="redirectcontainer">
+        <p class="text subtext redirecttext">Not redirected yet?</p>
+        <a class="interaction-button redirecttext" href="https://github.com/dylankrish">Click here</a>
+    </div>
 </body>
 </html>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #313131;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+    }
+    
+    .text {
+        opacity: 0;
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: bold;
+        animation: fadeIn 0.3s ease-in forwards;
+    }
+    
+    .redirectcontainer {
+        position: absolute;
+        bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .redirecttext {
+        animation: fadeIn 0.3s ease-in forwards;
+        animation-delay: 3s;
+    }
+    
+    .subtext {
+        font-size: 15px;
+    }
+    
+    .interaction-button {
+        opacity: 0;
+        background: rgba(255, 255, 255);
+        border-radius: 100px;
+        color: #000000;
+        height: 35px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px;
+        text-decoration: none;
+        line-height: 1;
+        min-width: 0px;
+        font-size: 1rem;
+        transition: transform 0.3s ease, background 0.3s ease;
+    }
+    
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+    }
+</style>
