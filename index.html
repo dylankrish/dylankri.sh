@@ -1,45 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Dylan Krishnan</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Personal portfolio of Dylan Krishnan - Effective Cybersecurity and IT solutions" />
+  <meta name="darkreader-lock" />
+  <title>About Dylan Krishnan</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- <link rel="icon" href="data:," /> -->
   <link rel="icon" href="favicon.ico">
   <script src="https://analytics.dylankri.sh/api/script.js" data-site-id="1" defer></script>
 </head>
 <body>
+  <!-- accessibile content skip button -->
+  <a class="skip-link" href="#main">Skip to content</a>
   
-  <!-- particles js -->
-  <div id="particles-js"></div>
-  
-  <!-- intro content panel -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="https://blog.dylankri.sh">Blog</a></li>
-      <li><a href="Dylan_Krishnan_resume.pdf">Resume</a></li>
-      <li><a href="https://github.com/dylankrish">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/dylan-krishnan">LinkedIn</a></li>
-    </ul>
-  </nav>
-  <div id="intropanel">
-    <strong id="main-text" class="title-text">Hi, I'm Dylan! <span class="wave">👋</span></strong>
-    <div id="secondary-text" class="subtitle-text">I'm a </div>
-    <div class="button-container">
-      <a href="Dylan_Krishnan_resume.pdf" class="interaction-button"><strong>Open Resume</strong></a>
-      <a href="mailto:dylan@dylankri.sh" class="interaction-button"><strong>Contact Me</strong></a>
+  <!-- header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#" class="brand" aria-label="Home">Dylan Krishnan</a>
+      
+      <nav class="site-nav" aria-label="Primary">
+        <!-- <ul> -->
+          <!-- jump-to links on the page -->
+          <!-- <li><a href="#about">About</a></li> -->
+          <!-- <li><a href="#projects">Projects</a></li> -->
+          <!-- <li><a href="#contact">Contact</a></li> -->
+        <!-- </ul> -->
+        <ul class="external">
+          <!-- external links -->
+          <li><a href="https://www.linkedin.com/in/dylan-krishnan" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/dylankrish" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+          <li><a href="https://blog.dylankri.sh" target="_blank" rel="noopener">Blog</a></li>
+        </ul>
+      </nav>
+      
+      <!-- menu button for mobile devices -->
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="sr-only">Toggle navigation</span>
+        <div class="menu-icon"></div>
+      </button>
+      
     </div>
-    <footer class="footer">
-      <p>Copyright © 2025 Dylan Krishnan</p>
-    </footer>
-  </div>
+    
+    <!-- mobile drawer -->
+    <nav id="mobile-menu" class="mobile-nav" aria-label="Mobile">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <hr />
+      <a href="https://www.linkedin.com/in/dylan-krishnan" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/dylankrish" target="_blank" rel="noopener">GitHub</a>
+      <a href="Dylan_Krishnan_resume.pdf" target="_blank" rel="noopener">Resume</a>
+      <a href="https://blog.dylankri.sh" target="_blank" rel="noopener">Blog</a>
+    </nav>
+  </header>
+  
+  <main id="main">
+    <!-- hero subtle parallax backdrop + bold intro -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-bg parallax" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <h1 class="headline reveal">
+          Effective Cybersecurity, IT, and Software Solutions
+        </h1>
+        <p class="subheadline reveal">
+          I’m Dylan Krishnan, a Cybersecurity enthusiast & software developer with a goal to make the internet secure and usable for everyone.
+        </p>
+        <a class="btn primary reveal" href="#about">Learn More</a>
+        <a class="btn primary reveal" href="mailto:contact@dylankri.sh">Contact Me</a>
+      </div>
+    </section>
+    
+    <!-- about section -->
+    <section id="about" class="section about">
+      <div class="container">
+        
+        <!-- Row 1: Profile + About text -->
+        <div class="about-top">
+          <div class="about-media reveal">
+            <div class="profile-container">
+              <div class="bubble" style="--x:-50; --y:-50; --size:120;"></div>
+              <div class="bubble" style="--x:60; --y:-40; --size:90;"></div>
+              <div class="bubble" style="--x:-70; --y:50; --size:70;"></div>
+              <img
+              src="https://avatars.githubusercontent.com/u/91637207?v=4"
+              alt="Portrait of Dylan Krishnan"
+              width="200" height="200" loading="lazy"
+              />
+            </div>
+          </div>
+          
+          <div class="about-intro">
+            <h2 class="section-title reveal">About</h2>
+            <p class="lead reveal">
+              I design & develop innovative software solutions that improve efficiency, strengthen security, and solve real-world challenges.
+              Currently pursuing a B.S. in Cybersecurity Analytics & Operations at Penn State University (May 2026).
+            </p>
+          </div>
+        </div>
+        
+        <!-- Row 2: Skills + Highlights -->
+        <div class="about-bottom split reveal">
+          <div>
+            <h3>Skills</h3>
+            <ul class="checklist">
+              <li>Frontend: HTML5, modern CSS, JavaScript</li>
+              <li>Backend: Python, Java</li>
+              <li>SQL: MySQL, PostgreSQL, Snowflake</li>
+              <li>DevOps: Docker, Git & GitHub</li>
+              <li>Security: Wazuh, Snort, Suricata</li>
+              <li>Platforms: AWS, GCP, Azure, Linux, Windows, Active Directory</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Highlights</h3>
+            <ul class="checklist">
+              <li>Pfizer: Software & Frontend Internships; analytics tools & dashboards</li>
+              <li>Systems Engineer for an internet company; virtualization server & device fleet management</li>
+              <li>Developed automation scripts that reduced repetitive tasks by hours weekly</li>
+              <li>Maintained a personal homelab environment, managing multi-server infrastructure and using security tools to ensure resiliance</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Row 3: Buttons -->
+        <div class="cta-row reveal">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn" href="Dylan_Krishnan_resume.pdf" target="_blank" rel="noopener">View Resume</a>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- outro -->
+    <section id="outro" class="section outro">
+      <div class="container">
+        <h2 class="section-title reveal">Want to see more?</h2>
+        <p class="outro-intro reveal">
+          Thanks for visiting my website! You can check out some of my other projects on my Blog and my GitHub. You can also see my experience on my resume.
+        </p>
+
+        <div class="outro-links reveal">
+          <a class="btn" href="https://blog.dylankri.sh" target="_blank" rel="noopener">Blog</a>
+          <a class="btn" href="https://github.com/dylankrish" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://dylankri.sh/resume" target="_blank" rel="noopener">Resume</a>
+        </div>
+      </div>
+    </section>
+
+  
+  <!-- footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>Copyright © <span id="year"></span> Dylan Krishnan</p>
+      <nav aria-label="Footer">
+        <a href="https://github.com/dylankrish/dylankri.sh">Source Code</a>
+        <a href="Dylan_Krishnan_resume.pdf">Resume</a>
+        <a href="mailto:contact@dylankri.sh">Contact</a>
+      </nav>
+    </div>
+  </footer>
+  
+  <script src="script.js" defer></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script>
-  // Load particles.json
-  particlesJS.load('particles-js', 'particles.json', function() {
-    console.log('Particles.js config loaded from particles.json');
-  });
-</script>
-<script type="text/javascript" src="reType.js"></script>
 </html>
