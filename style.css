@@ -390,7 +390,7 @@ body {
 }
 .outro-intro {
   color: var(--muted);
-  font-size: 1.125rem;
+  font-size: 18px;
   margin: 0 auto 32px;
   max-width: 640px;
 }
