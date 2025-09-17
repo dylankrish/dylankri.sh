@@ -394,6 +394,9 @@ body {
   margin: 0 auto 32px;
   max-width: 640px;
 }
+.outro h3 {
+  font-size: 36px;
+}
 .outro-links {
   display: flex;
   flex-wrap: wrap;
