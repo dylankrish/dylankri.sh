@@ -281,12 +281,6 @@ body {
   margin-bottom: 32px;
 }
 
-.cta-row {
-  display: flex;
-  gap: 12px;
-  margin-top: 8px;
-}
-
 /* Mobile stacking */
 @media (width <= 800px) {
   .about-top {
