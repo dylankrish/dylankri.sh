@@ -32,6 +32,7 @@ Apple-inspired minimal styling
 html {
   background: var(--bg);
   color: var(--text);
+  scroll-behavior: smooth;
 }
 
 :root {  
@@ -59,8 +60,6 @@ html {
 *::after { 
   box-sizing: border-box;
 }
-
-html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
