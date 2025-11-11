@@ -205,7 +205,7 @@ body {
 }
 
 .site-nav .external a::after { 
-  content: "↗"; 
+  /* content: "↗";  */
   margin-left: 6px; 
   font-size: 0.85em; 
   color: var(--muted); 
